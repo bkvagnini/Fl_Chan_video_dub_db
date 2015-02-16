@@ -1,0 +1,133 @@
+
+ACCESS QUERIES in old DB- need to modify them for new DB
+
+-Current Date Request
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].[Number of Dubs], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Request Date])=Date()))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+-Dub Request Table Nathan
+SELECT [Dub Request Table Query1].[Urgent Date], [Dub Request Table Query1].[Urgent Time], [Dub Request Table Query1].[Request Date], [Dub Request Table Query1].[Staff Taking Request], [Dub Request Table Query1].[Requester First Name], [Dub Request Table Query1].[Requester Last Name], [Dub Request Table Query1].Organization, [Dub Request Table Query1].Address, [Dub Request Table Query1].City, [Dub Request Table Query1].State, [Dub Request Table Query1].[Phone Number], [Dub Request Table Query1].[Number of Dubs], [Dub Request Table Query1].[Type of Request], [Dub Request Table Query1].[Requested Material], [Dub Request Table Query1].[Tape Format], [Dub Request Table Query1].[Dub Info Notes], [Dub Request Table Query1].[Tape will be picked up], [Dub Request Table Query1].[Tape needs to be sent], [Dub Request Table Query1].[Dub Made By], [Dub Request Table Query1].[Date Dub Made], [Dub Request Table Query1].[Number of Media Used], [Dub Request Table Query1].[Office Procedure Completed]
+FROM [Dub Request Table Query1]
+WHERE ((([Dub Request Table Query1].[Dub Made By])="Nathan"))
+ORDER BY [Dub Request Table Query1].[Urgent Date], [Dub Request Table Query1].[Request Date];
+
+-Dub Request Table Query
+SELECT [Dub Request Table].[Requester First Name], [Dub Request Table].[Request Number]
+FROM [Dub Request Table];
+
+-Dub Request Table Query1
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used], [Dub Request Table].[Office Procedure Completed]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Office Procedure Completed])=No))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+-Dubs Made by Darleen
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Dub Made By])="Darleen"))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Dubs Made by Ken
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Dub Made By])="ken"))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Dubs Made by Kevin
+
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Dub Made By])="Kevin"))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+-Dubs Made by Lauren
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Dub Made By])="Lauren"))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Dubs Made by Nathan
+SELECT [Dubs Made by Kevin].[Urgent Date], [Dubs Made by Kevin].[Urgent Time], [Dubs Made by Kevin].[Request Date], [Dubs Made by Kevin].[Staff Taking Request], [Dubs Made by Kevin].[Requester First Name], [Dubs Made by Kevin].[Requester Last Name], [Dubs Made by Kevin].Organization, [Dubs Made by Kevin].Address, [Dubs Made by Kevin].City, [Dubs Made by Kevin].State, [Dubs Made by Kevin].[Phone Number], [Dubs Made by Kevin].[Number of Dubs], [Dubs Made by Kevin].[Type of Request], [Dubs Made by Kevin].[Requested Material], [Dubs Made by Kevin].[Tape Format], [Dubs Made by Kevin].[Dub Info Notes], [Dubs Made by Kevin].[Tape will be picked up], [Dubs Made by Kevin].[Tape needs to be sent], [Dubs Made by Kevin].[Dub Made By], [Dubs Made by Kevin].[Date Dub Made], [Number of Tapes Used] AS Expr1
+FROM [Dubs Made by Kevin];
+
+
+-Dubs Made by Sarah
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Dub Made By])="Sarah"))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Dubs not made by Ken, Kevin or Darleen
+SELECT [Dub Request Table].[Dub Made By], [Dub Request Table].[Request Number], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].[Request Date]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Dub Made By])<>"Ken" And ([Dub Request Table].[Dub Made By])<>"Kevin" And ([Dub Request Table].[Dub Made By])<>"Darleen"));
+
+
+-Office Procedure Completed Query
+SELECT [Office procedure not completed].[Urgent Date], [Office procedure not completed].[Urgent Time], [Office procedure not completed].[Request Date], [Office procedure not completed].[Staff Taking Request], [Office procedure not completed].[Requester First Name], [Office procedure not completed].[Requester Last Name], [Office procedure not completed].Organization, [Office procedure not completed].Address, [Office procedure not completed].City, [Office procedure not completed].State, [Office procedure not completed].[Phone Number], [Office procedure not completed].[Number of Dubs], [Office procedure not completed].[Type of Request], [Office procedure not completed].[Requested Material], [Office procedure not completed].[Tape Format], [Office procedure not completed].[Dub Info Notes], [Office procedure not completed].[Tape will be picked up], [Office procedure not completed].[Tape needs to be sent], [Office procedure not completed].[Dub Made By], [Office procedure not completed].[Date Dub Made], [Office procedure not completed].[Number of Media Used], [Dub Request Table].[Office Procedure Completed]
+FROM [Office procedure not completed], [Dub Request Table]
+WHERE ((([Dub Request Table].[Office Procedure Completed])=Yes));
+
+
+-Office Procedure Not Completed
+SELECT [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Request Received by Tapes], [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Number of Media Used], [Dub Request Table].[Request Received by Tapes], [Dub Request Table].[Office Procedure Completed]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Office Procedure Completed])<>Yes And ([Dub Request Table].[Office Procedure Completed])=No))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Records with No Date for DUb Made
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Date Dub Made]) Is Null))
+ORDER BY [Dub Request Table].[Request Date], [Dub Request Table].[Date Dub Made];
+
+
+-Search by Date
+SELECT [Dub Request Table].[Request Number], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Request Received by Tapes], [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].[Number of Dubs], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Request Date]) Between [Type the beginning date:] And [Type the ending date:]))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Staff Taking Request
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used], [Dub Request Table].[Office Procedure Completed]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Staff Taking Request]) Like [Enter the first character to search by: ] & "*"))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Tape Needs to be Sent
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Tape needs to be sent])=Yes))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Tape will be picked up
+SELECT [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Tape will be picked up])=Yes))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time];
+
+
+-Urgent Request
+SELECT [Dub Request Table].[Request Number], [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].Address, [Dub Request Table].City, [Dub Request Table].State, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Dub Info Notes], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made], [Dub Request Table].[Number of Media Used]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Urgent Date])=Yes) AND (([Dub Request Table].[Urgent Time])=Yes))
+ORDER BY [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date];
+
+
+-Urgent Request Not Completed
+SELECT [Dub Request Table].[Request Number], [Dub Request Table].[Urgent Date], [Dub Request Table].[Urgent Time], [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Requester Last Name], [Dub Request Table].Organization, [Dub Request Table].[Phone Number], [Dub Request Table].[Number of Dubs], [Dub Request Table].[Type of Request], [Dub Request Table].[Requested Material], [Dub Request Table].[Tape Format], [Dub Request Table].[Tape will be picked up], [Dub Request Table].[Tape needs to be sent], [Dub Request Table].[Dub Made By], [Dub Request Table].[Date Dub Made]
+FROM [Dub Request Table]
+WHERE ((([Dub Request Table].[Urgent Date]) Is Not Null) AND (([Dub Request Table].[Date Dub Made]) Is Null))
+ORDER BY [Dub Request Table].[Request Date], [Dub Request Table].[Staff Taking Request], [Dub Request Table].[Requester First Name], [Dub Request Table].[Date Dub Made];
+
+

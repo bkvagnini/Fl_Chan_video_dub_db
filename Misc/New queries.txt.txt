@@ -1,0 +1,8 @@
+-CurrentDateRequest_qry
+
+SELECT Dub_Request_tbl.Urgent_Date, Dub_Request_tbl.Urgent_Time, Dub_Request_tbl.Request_Date, Staff_tbl.First, Staff_tbl.Last, Dub_Request_tbl.First, Dub_Request_tbl.Last, Dub_Request_tbl.Org, Dub_Request_tbl.Num_Dubs1, Dub_Request_tbl.Event1, Format_tbl.Format, Dub_Request_tbl.Dub_Notes
+FROM Format_tbl INNER JOIN (Staff_tbl INNER JOIN Dub_Request_tbl ON Staff_tbl.Staff_Id = Dub_Request_tbl.Dub_Made_By) ON Format_tbl.Format_Id = Dub_Request_tbl.Format
+WHERE (((Dub_Request_tbl.Request_Date)=Date()))
+ORDER BY Dub_Request_tbl.Urgent_Date, Dub_Request_tbl.Urgent_Time, Dub_Request_tbl.Request_Date;
+
+Notes: Date() [in Access] is eq to GetDate() [in SQL]
